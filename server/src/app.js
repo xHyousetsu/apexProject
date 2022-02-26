@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '..','public')))
 
 //API entrance and versioning
-// app.use('/v1', api)
+app.use('/v1', api)
 
 //Setting the rendering engine
 app.engine('handlebars', handlebars.engine())
